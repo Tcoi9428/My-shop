@@ -1,3 +1,5 @@
+<?php /* Smarty version 2.6.31, created on 2020-02-02 13:58:51
+         compiled from ./header.tpl */ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
 
-    {literal}
+    <?php echo '
         <style>
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -59,7 +61,8 @@
                 }
             }
         </style>
-    {/literal}
+    '; ?>
+
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
 </head>
@@ -100,7 +103,8 @@
 
     <section class="jumbotron text-center">
         <div class="container">
-            <h1>{$h1}</h1>
+            <h1><?php echo $this->_tpl_vars['h1']; ?>
+</h1>
         </div>
     </section>
 

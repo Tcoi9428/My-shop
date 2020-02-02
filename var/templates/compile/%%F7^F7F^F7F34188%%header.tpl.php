@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-02-02 10:13:28
+<?php /* Smarty version 2.6.31, created on 2020-02-02 13:58:47
          compiled from header.tpl */ ?>
 <!doctype html>
 <html lang="en">
@@ -34,6 +34,27 @@
             .card-text{
                 margin-right: 10px;
             }
+            .category-card{
+                display: flex;
+                justify-content: space-between;
+                background: #000;
+                color: #fff;
+                align-items: center;
+                padding: 15px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+            .category-card:nth-child(2n){
+                background: #ccc;
+                color: #000000;
+            }
+            .btn-primary{
+                margin-right: 10px;
+            }
+            .category-name{
+                flex-grow: 1;
+                margin-bottom: 0;
+            }
             @media (min-width: 768px) {
                 .bd-placeholder-img-lg {
                     font-size: 3.5rem;
@@ -59,7 +80,7 @@
                     <ul class="list-unstyled">
                         <li><a href="/" class="text-white">Список товаров</a></li>
                         <li><a href="#" class="text-white">Категории</a></li>
-                        <li><a href="#" class="text-white">Производители</a></li>
+                        <li><a href="/vendors/index.php" class="text-white">Производители</a></li>
                     </ul>
                 </div>
             </div>
