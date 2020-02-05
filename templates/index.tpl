@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 <div class="row">
-    <div class="col-6 mb-4"><a href="/products/add.php" class="btn btn-success">Добавить товар</a></div>
+    <div class="col-6 mb-4"><a href="/products/edit.php" class="btn btn-success">Добавить товар</a></div>
 </div>
 <div class="row">
     {foreach from=$products item=e}

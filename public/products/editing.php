@@ -49,6 +49,3 @@ if($delete_id)
     check_mysqli_query_errors($connect);
 }
 header('Location: /');
-//echo '<pre>'; var_dump($_POST); echo '</pre>';
-//echo '<pre>'; var_dump($categories_ids); echo '</pre>';
-//echo '<pre>'; var_dump($products_id); echo '</pre>';

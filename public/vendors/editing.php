@@ -13,6 +13,11 @@ if($vendor_id) {
             $result = mysqli_query($connect , $query);
             check_mysqli_query_errors($connect);
 }
+    /*
+     *
+     * Todo: Починить удаление производителей
+     */
+
 if($delete_id){
     $query = "DELETE FROM vendors WHERE id = '$delete_id'";
     $result = mysqli_query($connect , $query);
