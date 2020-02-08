@@ -76,7 +76,7 @@
                     <h4 class="text-white">Меню</h4>
                     <ul class="list-unstyled">
                         <li><a href="/" class="text-white">Список товаров</a></li>
-                        <li><a href="#" class="text-white">Категории</a></li>
+                        <li><a href="/categories/index.php" class="text-white">Категории</a></li>
                         <li><a href="/vendors/index.php" class="text-white">Производители</a></li>
                     </ul>
                 </div>

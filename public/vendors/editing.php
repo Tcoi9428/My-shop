@@ -8,20 +8,16 @@ if($vendor_id) {
     $result = mysqli_query($connect, $query);
     check_mysqli_query_errors($connect);
 }
-    else{
-            $query = "INSERT INTO vendors (name) VALUES ('$name')";
-            $result = mysqli_query($connect , $query);
-            check_mysqli_query_errors($connect);
-}
-    /*
-     *
-     * Todo: Починить удаление производителей
-     */
-
-if($delete_id){
+elseif ($delete_id){
     $query = "DELETE FROM vendors WHERE id = '$delete_id'";
     $result = mysqli_query($connect , $query);
     check_mysqli_query_errors($connect);
 }
+else{
+    $query = "INSERT INTO vendors (name) VALUES ('$name')";
+    $result = mysqli_query($connect , $query);
+    check_mysqli_query_errors($connect);
+}
+
 
 header('Location:/vendors');

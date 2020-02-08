@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-02-02 13:58:51
+<?php /* Smarty version 2.6.31, created on 2020-02-08 09:18:55
          compiled from ./header.tpl */ ?>
 <!doctype html>
 <html lang="en">
@@ -79,7 +79,7 @@
                     <h4 class="text-white">Меню</h4>
                     <ul class="list-unstyled">
                         <li><a href="/" class="text-white">Список товаров</a></li>
-                        <li><a href="#" class="text-white">Категории</a></li>
+                        <li><a href="/categories/index.php" class="text-white">Категории</a></li>
                         <li><a href="/vendors/index.php" class="text-white">Производители</a></li>
                     </ul>
                 </div>

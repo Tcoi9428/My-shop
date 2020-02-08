@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-02-02 07:44:44
+<?php /* Smarty version 2.6.31, created on 2020-02-08 14:58:10
          compiled from index.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "header.tpl", 'smarty_include_vars' => array()));
@@ -6,7 +6,7 @@ $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
 <div class="row">
-    <div class="col-6 mb-4"><a href="/products/add.php" class="btn btn-success">Добавить товар</a></div>
+    <div class="col-6 mb-4"><a href="/products/edit.php" class="btn btn-success">Добавить товар</a></div>
 </div>
 <div class="row">
     <?php $_from = $this->_tpl_vars['products']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }if (count($_from)):
@@ -55,10 +55,11 @@ unset($_smarty_tpl_vars);
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Редактировать</button>
+                        <a href="/products/edit.php?product_id=<?php echo $this->_tpl_vars['e']['id']; ?>
+" class="btn btn-sm btn-outline-secondary">Редактировать</a>
                         <form action="/products/editing.php" method="POST">
                             <input type="hidden" value="<?php echo $this->_tpl_vars['e']['id']; ?>
-" name="delete_id">
+" name="product_id">
                              <button type="submit"  class="btn btn-sm btn-outline-secondary">Удалить</button>
                         </form>
                     </div>

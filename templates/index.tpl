@@ -37,9 +37,9 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Редактировать</button>
+                        <a href="/products/edit.php?product_id={$e.id}" class="btn btn-sm btn-outline-secondary">Редактировать</a>
                         <form action="/products/editing.php" method="POST">
-                            <input type="hidden" value="{$e.id}" name="delete_id">
+                            <input type="hidden" value="{$e.id}" name="product_id">
                              <button type="submit"  class="btn btn-sm btn-outline-secondary">Удалить</button>
                         </form>
                     </div>
