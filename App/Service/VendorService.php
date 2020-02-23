@@ -11,9 +11,7 @@ class VendorService
     {
     }
 
-    /**
-     * @return Vendor[]
-     */
+
     public static function getList(){
         $query = "SELECT * FROM vendors";
         $vendors = DataBase()->fetchAll($query);

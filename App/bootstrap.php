@@ -4,8 +4,7 @@ use App\Db\MySql;
 
 define('APP_DIR' , __DIR__ . "/../" );
 
-require_once APP_DIR . '/libs/Smarty/libs/Smarty.class.php';
-require_once APP_DIR . '/App/Db/MySql.php';
+require_once APP_DIR . '/vendor/autoload.php';
 $config = require_once APP_DIR . '/config/config.php';
 $h1 = 'Интернет магазин техники';
 

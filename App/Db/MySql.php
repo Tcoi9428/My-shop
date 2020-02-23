@@ -51,6 +51,6 @@ class MySql
         }
         $mysqli_error = mysqli_error($this->connect());
         $message = "Mysql query error: ($mysqli_errno) $mysqli_error";
-        throw new \Exception($message);
+        die($message);
     }
 }
