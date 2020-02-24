@@ -6,7 +6,6 @@ define('APP_DIR' , __DIR__ . "/../" );
 
 require_once APP_DIR . '/vendor/autoload.php';
 $config = require_once APP_DIR . '/config/config.php';
-$h1 = 'Интернет магазин техники';
 
 
 //$connect = new MySql($config['db']['host'] , $config['db']['user'] ,$config['db']['password'] ,$config['db']['db_name']);
@@ -18,10 +17,16 @@ function DataBase(){
 }
 function smarty(){
     global $config;
-    $smarty = new Smarty();
-    $smarty->template_dir = $config['template']['template_dir'];
-    $smarty->cache_dir = $config['template']['cache_dir'];
-    $smarty->compile_dir = $config['template']['compile_dir'];
+    static $smarty;
+
+    if (is_null($smarty)) {
+        $smarty = new Smarty();
+
+        $smarty->template_dir = $config['template']['template_dir'];
+        $smarty->compile_dir = $config['template']['compile_dir'];
+        $smarty->cache_dir = $config['template']['cache_dir'];
+    }
+
     return $smarty;
 }
 

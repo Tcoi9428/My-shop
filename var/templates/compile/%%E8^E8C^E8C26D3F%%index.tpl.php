@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.31, created on 2020-02-02 18:01:39
+<?php /* Smarty version 2.6.31, created on 2020-02-24 12:23:18
          compiled from vendors/index.tpl */ ?>
 <?php $_smarty_tpl_vars = $this->_tpl_vars;
 $this->_smarty_include(array('smarty_include_tpl_file' => "./header.tpl", 'smarty_include_vars' => array()));
@@ -18,7 +18,7 @@ unset($_smarty_tpl_vars);
 </p>
             <a href="/vendors/edit.php?vendor_id=<?php echo $this->_tpl_vars['e']['id']; ?>
 "class="btn btn-primary">Редактировать</a>
-        <form action="/vendors/editing.php" method="POST">
+        <form action="/vendors/delete.php" method="POST">
             <input type="hidden" value="<?php echo $this->_tpl_vars['e']['id']; ?>
 " name="delete_id">
             <button type="submit"  class="btn btn-sm btn-outline-secondary">Удалить</button>

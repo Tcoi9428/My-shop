@@ -42,8 +42,9 @@ class MySql
         return mysqli_fetch_all($result, MYSQLI_ASSOC);
     }
 
-
-
+    public function insert(){
+        return mysqli_insert_id($this->connect());
+    }
     private function checkErrors() {
         $mysqli_errno = mysqli_errno($this->connect());
         if (!$mysqli_errno) {

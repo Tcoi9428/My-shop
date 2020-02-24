@@ -25,9 +25,10 @@ else{
     $result = DataBase()->query($query);
 }
 
-if (!$product_id) {
-    $product_id = mysqli_insert_id($connect);
+if($product_id == 0){
+    $product_id = DataBase()->insert();
 }
+
 
 $categories = [];
 foreach ($categories_ids as $category_id) {

@@ -15,7 +15,7 @@ $categories = DataBase()->fetchAll($query);
 
 
 smarty()->assign_by_ref('categories',$categories);
-smarty()->assign_by_ref('product_categories',$product_categories);
+/*smarty()->assign_by_ref('product_categories',$product_categories);*/
 smarty()->assign_by_ref('vendors', $vendors);
 smarty()->assign_by_ref('product', $product);
 smarty()->assign_by_ref('product_id' , $product_id);
